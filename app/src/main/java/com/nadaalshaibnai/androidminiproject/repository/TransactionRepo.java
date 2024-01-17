@@ -17,10 +17,10 @@ public class TransactionRepo {
             return instance;
         }
 
-        public ArrayList<Transaction> generateDummyTransaction(int numberOfItems){
+        public ArrayList<Transaction> generateDummyTransaction(){
             ArrayList<Transaction> transactionList = new ArrayList<>();
             Random random = new Random();
-            for(int i = 0; i < numberOfItems; i++){
+            for(int i = 0; i < 10; i++){
 
                 int[] id = {123, 456, 789};
                 int randomId = random.nextInt(id.length);
@@ -48,6 +48,23 @@ public class TransactionRepo {
                         type[randomType]));
             }
             return transactionList;
+
+        }
+
+        public ArrayList<Transaction> dummyData(int numberOfItem){
+            ArrayList<Transaction> transactionDetails = new ArrayList<>();
+
+
+            transactionDetails.add(new Transaction(123, "12-23-2023", 7000, 50000, 1234, TransactionType.WITHDRAWAL));
+            transactionDetails.add(new Transaction(123, "1-3-2024", 7000, 50000, 1234, TransactionType.DEPOSIT));
+            transactionDetails.add(new Transaction(123, "2-3-2024", 7000, 50000, 1234, TransactionType.WITHDRAWAL));
+            transactionDetails.add(new Transaction(123, "5-3-2024", 7000, 50000, 1234, TransactionType.DEPOSIT));
+            transactionDetails.add(new Transaction(123, "5-7-2024", 7000, 50000, 1234, TransactionType.WITHDRAWAL));
+            transactionDetails.add(new Transaction(123, "10-8-2024", 7000, 50000, 1234, TransactionType.DEPOSIT));
+
+            return transactionDetails;
+
+
 
         }
     }

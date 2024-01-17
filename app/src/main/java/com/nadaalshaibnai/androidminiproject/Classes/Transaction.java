@@ -1,11 +1,13 @@
 package com.nadaalshaibnai.androidminiproject.Classes;
 
-public class Transaction {
+import java.io.Serializable;
+
+public class Transaction implements Serializable {
 
     private int id;
     String date;
     private double amount;
-    private double balance;
+    private static double balance;
     private int account;
     private TransactionType type;
 

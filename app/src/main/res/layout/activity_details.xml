@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_secondary"
+    tools:context=".DetailsActivity"
+
+    >
+
+    <TextView
+        android:id="@+id/transactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/transactionDate"
+        app:layout_constraintTop_toBottomOf="@+id/transactionID"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/currentBalance"
+        app:layout_constraintTop_toBottomOf="@+id/transactionDate"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/transactionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        app:layout_constraintTop_toBottomOf="@+id/transactionType"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/transactionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/transactionType"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/accountNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentBalance"
+        tools:layout_editor_absoluteX="46dp" />
+
+    <TextView
+        android:id="@+id/currentBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/accountNumber"
+        app:layout_constraintTop_toBottomOf="@+id/amount"
+        tools:layout_editor_absoluteX="46dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
