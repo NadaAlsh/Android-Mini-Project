@@ -40,11 +40,11 @@ public class DetailsActivity extends AppCompatActivity {
 
         Transaction transactionMine = getIntent().getSerializableExtra(ACCOUNT_NAME_KEY, Transaction.class );
 
-        transactionID.setText(String.valueOf(transactionMine.getId()));
-        transactionType.setText(String.valueOf(transactionMine.getType()));
-        amount.setText(String.valueOf(transactionMine.getAmount()));
-        currentBalance.setText(String.valueOf(transactionMine.getBalance()));
-        accountNumber.setText(String.valueOf(transactionMine.getAccount()));
-        transactionDate.setText(String.valueOf(transactionMine.getDate()));
+        transactionID.setText("Transaction Number: " + String.valueOf(transactionMine.getId()));
+        transactionType.setText("Transaction Type: " + String.valueOf(transactionMine.getType()));
+        amount.setText("Amount: " + String.valueOf(transactionMine.getAmount()));
+        currentBalance.setText("Balance: " + String.valueOf(transactionMine.getBalance()));
+        accountNumber.setText("Account: " + String.valueOf(transactionMine.getAccount()));
+        transactionDate.setText("Date: " + String.valueOf(transactionMine.getDate()));
     }
 }
