@@ -3,73 +3,116 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-
-    tools:context=".DetailsActivity"
-    android:background="@drawable/bg_card"
+    android:layout_height="450dp"
     android:layout_margin="20dp"
-
+    android:background="@color/card"
+    tools:context=".DetailsActivity"
+    android:accessibilityPaneTitle="@string/transaction_details"
 
     >
-
-    <TextView
-        android:id="@+id/transactionType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/transactionDate"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transactionID" />
-
-    <TextView
-        android:id="@+id/amount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/currentBalance"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transactionDate" />
 
     <TextView
         android:id="@+id/transactionDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/amount"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/transactionType" />
-
-    <TextView
-        android:id="@+id/transactionID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/transactionType"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/calibri"
+        android:text="transactionDate"
+        android:textColor="#757F8C"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/accountNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/calibri"
+        android:text="accountNumber"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/transactionType" />
+
+    <TextView
+        android:id="@+id/transactionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/calibri"
+        android:text="transactionType"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/accountNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/calibri"
+        android:text="amount"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/transactionID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountNumber" />
+
+    <TextView
+        android:id="@+id/transactionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:layout_marginStart="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/calibri"
+        android:text="transactionID"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/currentBalance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/currentBalance" />
+        app:layout_constraintTop_toBottomOf="@+id/amount" />
 
     <TextView
         android:id="@+id/currentBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/accountNumber"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/calibri"
+        android:text="currentBalance"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/amount" />
+        app:layout_constraintTop_toBottomOf="@+id/transactionID" />
+
+    <!--<androidx.constraintlayout.widget.Guideline-->
+    <!--&lt;!&ndash;    android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;    app:layout_constraintGuide_percent="0.8"&ndash;&gt;-->
+    <!--&lt;!&ndash;    android:background="@drawable/img"&ndash;&gt;-->
+    <!--    />-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

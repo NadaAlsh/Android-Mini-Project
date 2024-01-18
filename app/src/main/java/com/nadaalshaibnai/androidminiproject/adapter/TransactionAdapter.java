@@ -44,7 +44,14 @@ public class TransactionAdapter extends RecyclerView.Adapter<TransactionAdapter.
         holder.balanceTextView.setText(String.valueOf(transaction.getBalance()));
         holder.typeTextView.setText(String.valueOf(transaction.getType()));
         holder.amountTextView.setText(String.valueOf(transaction.getAmount()));
-
+        if(String.valueOf(transaction.getType()).equals("WITHDRAWAL"))
+        {
+            holder.amountTextView.setTextColor(0xFFFF0000);
+        }
+        else
+        {
+            holder.amountTextView.setTextColor(0xFF00FF00);
+        }
     }
 
 

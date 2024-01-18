@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Transactions </string>
+    <string name="app_name">Recent Transactions </string>
+    <string name="transaction_details">Transaction Details </string>
 </resources>
