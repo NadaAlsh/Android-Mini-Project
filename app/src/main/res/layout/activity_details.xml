@@ -106,13 +106,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/transactionID" />
 
-    <!--<androidx.constraintlayout.widget.Guideline-->
-    <!--&lt;!&ndash;    android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;    android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;    android:orientation="horizontal"&ndash;&gt;-->
-    <!--&lt;!&ndash;    app:layout_constraintGuide_percent="0.8"&ndash;&gt;-->
-    <!--&lt;!&ndash;    android:background="@drawable/img"&ndash;&gt;-->
-    <!--    />-->
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
